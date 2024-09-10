@@ -1,0 +1,90 @@
+html {
+    font-family: "Tektur", sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #485459 0%,#0d0d0d 52%, #0d0d0d 85%, #0d0d0d 100% );
+}
+
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 60px;
+    color: #ACE6F4;
+    text-transform: uppercase;
+    line-height: normal;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+    color: #D7D8D9;
+    font-weight: 400;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    margin: 0;
+    text-align: center;
+    color: #C59A28;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+#desc {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.image-slider {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.image-slider img:nth-child(2) {
+    width: 450px;
+    height: 338px;
+    border-radius: 22px;
+    margin-left: -64px;
+    margin-right: -64px;
+    z-index: 1;
+}
+
+.image-slider img:nth-child(1) {
+    width: 375px;
+    height: 280px;
+    border-radius: 22px;
+    rotate: -10deg;
+    opacity: 0.3;
+}
+
+.image-slider img:nth-child(3) {
+    width: 375px;
+    height: 280px;
+    border-radius: 22px;
+    rotate: 10deg;
+    opacity: 0.5;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+}
