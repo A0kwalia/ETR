@@ -21,14 +21,22 @@ defaultBike.innerHTML = `
     <img src="images/blue.png" alt="blue sports bike">
 `; 
 
+//create the link for navigation to next page.
+const link = document.createElement('a');
+link.href = 'catalogue.html';
+link.rel = 'next';
+
 //add the logo
 const logo = document.createElement('img');
 logo.id = 'logo';
 logo.src = 'images/logo.svg';
 logo.alt = 'A motorcycle logo';
 
+//append the logo to the hyperlink.
+link.appendChild(logo);
+
 //append to the fragment
-homeFragment.append(description, defaultBike, logo);
+homeFragment.append(description, defaultBike, link);
 
 //append the fragment to the body
 document.body.appendChild(homeFragment);
