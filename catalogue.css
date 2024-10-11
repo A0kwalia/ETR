@@ -16,31 +16,48 @@ body {
     background-image: linear-gradient(to bottom right, #485459 0%,#0d0d0d 52%, #0d0d0d 85%, #0d0d0d 100% );
 }
 
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
 #logo {
     width: 90px;
     height: 90px;
     animation: scale-logo 2s infinite;
 }
+@keyframes scale-logo {
+    0% {
+        transform: scale(1);
+    }
 
-/* Work on putting both the logo and the search bar in a container and positioning them relative to the container */
-.top-left {
-    position: absolute;
-    left: 40px;
-    left: 40px;
+    50% {
+        transform: scale(1.05);
+    }
 
+    100% {
+        transform: scale(1);
+    }
 }
+
+
+#search-form {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
 
 #search-container{
     width: 675px;
     height: 64px;
     position: relative;
     display: flex;
-}
 
-#search-form {
-    display: flex;
-    position: absolute;
-    top: 40px;
 }
 
 #catalogue-search {
