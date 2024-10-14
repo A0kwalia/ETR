@@ -96,3 +96,27 @@ form img {
     width: 28px;
     height: 28px;
 }
+
+h2 {
+    text-align: center;
+    color: #D7D8D9;
+    letter-spacing: 0.01rem;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.item img {
+    width: 375px;
+    height: 280px;
+    border: 2px solid #ACE6F4;
+    border-radius: 5px;
+}
+
+.item:hover img {
+    border: 2px solid #F28B30;
+}
+
+.item:hover h2 {
+    color: #F28B30;
+}
