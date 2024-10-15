@@ -7,11 +7,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 40px;
+    padding-top: 30px;
     padding-bottom: 20px;
     margin: 0 auto;
     align-items: center;
-    min-height: 100vh;
     box-sizing: border-box;
     background-image: linear-gradient(to bottom right, #485459 0%,#0d0d0d 52%, #0d0d0d 85%, #0d0d0d 100% );
 }
@@ -103,12 +102,13 @@ h2 {
     letter-spacing: 0.01rem;
     line-height: 150%;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
+    text-transform: capitalize;
 }
 
 .item img {
-    width: 375px;
-    height: 280px;
+    width: 352px;
+    height: 270px;
     border: 2px solid #ACE6F4;
     border-radius: 5px;
 }
@@ -119,4 +119,12 @@ h2 {
 
 .item:hover h2 {
     color: #F28B30;
+}
+
+.moto-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 60px;
 }
