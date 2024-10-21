@@ -1,0 +1,26 @@
+html {
+    font-family: "Tektur", sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #485459 0%,#0d0d0d 52%, #0d0d0d 85%, #0d0d0d 100% );
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+}

@@ -69,6 +69,7 @@ body {
     font-family: "Tektur", sans-serif;
     font-size: 20px;
     color: #D7D8D9;
+    margin: 0;
 }
 
 #catalogue-search:focus {
@@ -77,6 +78,7 @@ body {
 }
 
 #catalogue-search::placeholder {
+    margin: 0;
     font-family: "Tektur", sans-serif;
     font-size: 20px;
     text-transform: capitalize;
@@ -94,6 +96,11 @@ form img {
     transform: translateY(-50%);
     width: 28px;
     height: 28px;
+}
+
+
+.item {
+    cursor: pointer;
 }
 
 h2 {
@@ -127,4 +134,59 @@ h2 {
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     row-gap: 60px;
+}
+
+/* pagination component */
+
+#pagination {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+#pages {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+#pages a {
+    display: flex;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    margin: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+    text-align: center;
+}
+
+.arrow_nav {
+    display: flex;
+    align-items: center;
+}
+
+#ellipsis {
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.arrow {
+    width: 18px;
+    height: 18px;
+}
+
+#current-page {
+    color: #F28B30;
+}
+
+#arrow-faded {
+    opacity: 50%;
 }
