@@ -6,21 +6,99 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     padding-top: 30px;
     padding-bottom: 20px;
     margin: 0 auto;
     align-items: center;
     min-height: 100vh;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom right, #485459 0%,#0d0d0d 52%, #0d0d0d 85%, #0d0d0d 100% );
+    background-image: linear-gradient( #021226 0%, #0F1E32 100% );
 }
 
 #header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     width: 100%;
     padding: 0 40px;
     box-sizing: border-box;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    animation: scale-logo 2s infinite;
+}
+@keyframes scale-logo {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#bike_name {
+    text-align: center;
+    color: #97C8DF;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    line-height: 100%;
+}
+
+#bike_name span {
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+}
+
+#specs_intro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#engine_power {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+.engine_power_spec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.engine_power_spec img {
+    width: 56px;
+    height: 56px;
+}
+
+.engine_power_spec h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    color: #97C8DF;
+}
+
+.engine_power_spec p {
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    color: #97C8DF;
 }
