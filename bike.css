@@ -260,3 +260,6 @@ body {
     width: 980px;
 }
 
+.specs_row_single {
+    justify-content: center;
+}
