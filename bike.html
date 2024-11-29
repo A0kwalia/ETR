@@ -278,5 +278,73 @@
 
         </div>
     </div>
+
+    <div id="comment_section">
+        <div class="comment_section_header">
+            <div class="comment_section_header_upper">
+                <p>13 comments</p>
+                <span>
+                    <p>Login</p>
+                    <img src="images/arrow_down_2.svg">
+                </span>
+            </div>
+            <div></div>
+        </div>
+        <div id="comment_box">
+            <img src="images/avatar.svg" class="avatar" alt="man with motorcycle helmet">
+            <!--comment section box-->
+            <form action="/submit" method="POST">
+                <textarea id="comments" name="comments" rows="4" cols="50" maxlength="300" placeholder="Join the discussion..."></textarea>
+                <button type="submit">Comment</button>
+            </form>   
+        </div>
+
+        <div id="logins_filters">
+            <div id="socials_logins">
+                <p>log in with</p>
+                <div id="socials">
+                    <img src="images/reddit.svg" alt="reddit logo">
+                    <img src="images/facebook.svg" alt="facebook logo">
+                    <img src="images/google.svg" alt="google logo">
+                </div>
+            </div>
+            <div id="comment_filters">
+                <p>popular</p>
+                <p>newest</p>
+                <p>oldest</p>
+            </div>
+        </div>
+
+        <div id="commment_block">
+            <div class="thread">
+                <img src="images/avatar.svg" class="avatar" alt="man with motorcycle helmet">
+                <div class="thread_block">
+                    <div class="initial_comment">
+                        <div class="comment_detail">
+                            <p>mark macbee</p>
+                            <p>3 days ago</p>
+                            <p>Lorem ipsum dolor sit amet consectetur. Ut placerat tincidunt turpis rhoncus placerat faucibus mi. Turpis erat fermentum tellus sed eget integer donec.</p>
+                        </div>
+                        <div class="like_reply">
+                            <div class="like_dislike">
+                                <div class="thumb_count">
+                                    <img src="images/like.svg" alt="thumbs up icon" class="thumb_icon">
+                                    <p id="like_count">1</p>
+                                </div>
+                                <div class="thumb_count">
+                                    <img src="images/dislike.svg" alt="thumbs down icon" class="thumb_icon">
+                                    <p id="dislike_count">0</p>
+                                </div>
+                            </div>
+                            <p id="reply_link">reply</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </body>
 </html>
